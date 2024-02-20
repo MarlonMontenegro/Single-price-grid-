@@ -1,0 +1,186 @@
+/* ========== GOOGLE FONT ========= */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* ========== PRIMARY COLORS ========= */
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+}
+
+
+/* ========== NEUTRAL COLORS ========= */
+:root {
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+
+
+/* ========== FONTS ========= */
+:root {
+    --Font-Size-Default: 16px;
+    --Font-Family-Karla: "Karla", sans-serif;
+}
+
+
+html {
+    font-size: var(--Font-Size-Default);
+}
+
+body {
+    font-family: var(--Font-Family-Karla);
+    align-items: center;
+    background-color: var(--Light-Gray);
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+main {
+    display: grid;
+    grid-template-areas:
+      "join-community join-community"
+      "subscription why-us";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+
+.join-community {
+    width: 700px;
+    height: 200px;
+    background-color: var(--neutral-white);
+    grid-area: join-community;
+    border-radius: 15px 15px 0 0;
+    line-height: 1.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.join-community h2 {
+    color: var(--Cyan);
+}
+
+.green {
+    color: var(--Bright-Yellow);
+}
+
+.subscription {
+    width: 350px;
+    height: 250px;
+    background-color: var(--Cyan);
+    grid-area: subscription;
+    filter: brightness(90%);
+    border-radius: 0 0 0 15px;
+
+    color: var(--neutral-white);
+    text-align: start;
+}
+
+.text {
+    padding: 25px 20px 35px 25px;
+    margin-top: -10px;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.why-us {
+    width: 350px;
+    height: 250px;
+    grid-area: why-us;
+    background-color: var(--Cyan);
+    border-radius: 0 0 15px 0;
+    color: var(--neutral-white);
+}
+.why-us p {
+    font-weight: 100;
+    line-height: 1em;
+    font-size: 0.75rem;
+    padding-right: 100px;
+}
+
+.why-us h3 {
+    font-size: 1rem;
+}
+
+
+/* BUTTON   */
+
+.btn {
+    background-color: var(--Bright-Yellow);
+
+    width: 200px;
+    height: 40px;
+
+    border: 0;
+    border-radius: 5px;
+    color: var(--neutral-white);
+
+    box-shadow: -1px 6px 58px -15px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+
+    margin-left: 50px;
+}
+
+/* ========== FOOTER ========= */
+
+
+footer {
+    padding-top: 20px;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+
+}
+
+
+@media screen and (max-width: 450px) {
+    main {
+        display: grid;
+        grid-template-areas:
+      "join-community"
+      "subscription"
+      "why-us";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        margin-left: 5px;
+        margin-top: 50px;
+    }
+
+
+    .join-community {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .subscription {
+        width: 100%;
+        height: 250px;
+        border-radius: 0;
+    }
+
+    .why-us {
+        width: 100%;
+        height: 250px;
+        border-radius: 0 0 15px 15px;
+    }
+
+}

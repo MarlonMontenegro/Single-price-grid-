@@ -28,9 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/MarlonMontenegro/Single-price-grid-
-)ere](https://grid-component.com)
-- Live Site URL: [https://marlonmontenegro.github.io/Single-price-grid-/](https://marlonmontenegro.github.io/Single-price-grid-/)](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MarlonMontenegro/Single-price-grid](https://grid-component.com)
+- Live Site URL: [https://marlonmontenegro.github.io/Single-price-grid-/](https://marlonmontenegro.github.io/Single-price-grid-/)
 
 ## My process
 
